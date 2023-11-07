@@ -23,9 +23,15 @@ ul {
     list-style: none;
     position: relative;
     background-color: #7e1d1a;
-    padding: 15px 30px;
+    padding: 15px 20px;
     margin-bottom: 0px !important;
 }
+
+.nav-bar a.active{
+    background-color: #fff;
+    color:#7e1d1a;
+}
+
 .logo img {
     width: 70px;
 }
@@ -45,18 +51,19 @@ ul {
 }
 
 .menu li {
-    padding-left: 30px;
+    padding-left: 15px;
 }
 
 .menu li a {
     display: inline-block;
     text-decoration: none;
-    color: var(--color1);
+    color: #fff;
     text-align: center;
     transition: 0.15s ease-in-out;
     position: relative;
     text-transform: uppercase;
     font-weight: bold;
+    padding: 10px 5px;
 }
 
 .menu li a::after {
@@ -202,6 +209,7 @@ ul {
     top: 100px;
     filter: blur(0.5px);
 }
+
 .topnav {
   overflow: hidden;
   background-color: #fff
@@ -232,14 +240,19 @@ ul {
 }
 
 .dropdown .dropbtn {
-  font-size: 17px;    
-  border: none;
-  outline: none;
-  color: #7e1d1a;
-  padding: 14px 16px;
-  background-color: #fff;
-  font-family: inherit;
-  margin: 0;
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: #FFF;
+    background-color: #7E1D1A;
+    margin: 0;
+    font-weight: bold;
+    padding: 10px 5px;
+}
+
+.dropdown a.active{
+    background-color: #fff;
+    color: #7e1d1a;
 }
 
 .dropdown-content {
@@ -252,17 +265,16 @@ ul {
 }
 
 .dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
+    float: none;
+    color: #7e1d1a !important;
+    padding: 12px 16px;
+    text-decoration: none !important;
+    display: block !important;
+    text-align: left !important;
 }
 
 .topnav a:hover, .dropdown:hover .dropbtn {
-  background-color: #fff;
-  color: #7e1d1a;
+  color: #fff;
   text-decoration: underline;
 }
 
@@ -565,7 +577,6 @@ footer {
     text-align: left;
     font: bold 16px sans-serif;
     padding: 50px 50px 60px 50px;
-    margin-top: 80px;
 }
 
 .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
@@ -580,20 +591,20 @@ footer {
 }
 
 .footer-distributed h3 {
-    color: #ffffff;
+    color: #fff;
     font: normal 32px 'Verdana', cursive;
     margin: 0;
 }
 
 
-.footer-distributed h3 span {
-    color: #e0ac1c;
+.footer-distributed h3 span a {
+    color: #fff;
 }
 
 /* Footer links */
 
 .footer-distributed .footer-links {
-    color: #ffffff;
+    color: #fff;
     margin: 20px 0 12px;
 }
 
@@ -601,7 +612,7 @@ footer {
     display: inline-block;
     line-height: 1.8;
     text-decoration: none;
-    color: inherit;
+    color: #fff;
 }
 
 .footer-distributed .footer-company-name {
@@ -669,10 +680,9 @@ footer {
     margin: 0;
 }
 
-.footer-distributed .footer-company-about span {
+.footer-distributed .footer-company-about span a {
     display: block;
-    color: #ffffff;
-    font-size: 18px;
+    color: #fff;
     font-weight: bold;
     margin-bottom: 20px;
 }
